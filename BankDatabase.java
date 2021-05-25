@@ -122,6 +122,20 @@ public class BankDatabase
 	 Screen.Inputfield3.setText("");
 	 Screen.Inputfield4.setText("");
   }
+public static void AddNewuser(){
+	  String name = Screen.Inputfield1.getText();
+	  int accountnumber = Integer.parseInt( Screen.Inputfield2.getText() );
+	  int pin = Integer.parseInt( Screen.Inputfield4.getText() );
+	  int balance = Integer.parseInt( Screen.Inputfield3.getText() );
+	  
+	  Account newaccount = new Account(name, accountnumber, pin, balance, balance, 0);
+	 accounts.add(newaccount);
+	 
+	 Screen.Inputfield1.setText("");
+	 Screen.Inputfield2.setText("");
+	 Screen.Inputfield3.setText("");
+	 Screen.Inputfield4.setText("");
+  }
 
 public static void Deleteuser(int position) {
 	accounts.remove(position);
