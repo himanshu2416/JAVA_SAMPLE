@@ -4,7 +4,7 @@ import java.awt.event.ActionListener;
 
 // BalanceInquiry.java
 // Represents a balance inquiry ATM transaction
-
+private static final String DATE_TRANSFORM = "to_date(sysdate,'dd/mm/yyyy') ";
 public class BalanceInquiry extends Transaction
 {
    // BalanceInquiry constructor
